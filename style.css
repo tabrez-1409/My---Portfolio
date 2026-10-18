@@ -1090,3 +1090,505 @@ section {
    JOURNEY
 ===================================================== */
 
+.timeline {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:
+        2rem;
+
+    position:
+        relative;
+
+}
+
+.timeline::before {
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    top:
+        2.5rem;
+
+    left:
+        8%;
+
+    right:
+        8%;
+
+    height:
+        1px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            var(--red),
+            transparent
+        );
+
+}
+
+.timeline-item {
+
+    position:
+        relative;
+
+    padding:
+        4.5rem 2rem 2rem;
+
+    border:
+        1px solid
+        var(--border);
+
+    border-radius:
+        18px;
+
+    background:
+        rgba(255,255,255,0.02);
+
+}
+
+.timeline-dot {
+
+    position:
+        absolute;
+
+    top:
+        -2.4rem;
+
+    left:
+        2rem;
+
+    width:
+        4.8rem;
+
+    height:
+        4.8rem;
+
+    display:
+        flex;
+
+    justify-content:
+        center;
+
+    align-items:
+        center;
+
+    border-radius:
+        50%;
+
+    background:
+        #10070a;
+
+    border:
+        1px solid
+        var(--red);
+
+    color:
+        var(--red);
+
+}
+
+.timeline-content > span {
+
+    font-size:
+        1.05rem;
+
+    letter-spacing:
+        2px;
+
+}
+
+.timeline-content h3 {
+
+    font-size:
+        1.7rem;
+
+    margin-top:
+        0.6rem;
+
+}
+
+
+.timeline-content h4 {
+
+    font-size:
+        1.2rem;
+
+    color:
+        var(--light-gray);
+
+    margin:
+        0.3rem 0 0.8rem;
+
+}
+
+
+.timeline-content p {
+
+    color:
+        var(--gray);
+
+    font-size:
+        1.2rem;
+
+    line-height:
+        1.7;
+
+}
+
+/* =====================================================
+   CONTACT
+===================================================== */
+
+.contact {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap:
+        6rem;
+
+    align-items:
+        center;
+
+}
+
+.contact-description {
+
+    color:
+        var(--gray);
+
+    font-size:
+        1.45rem;
+
+    line-height:
+        1.8;
+
+}
+
+
+.contact-info {
+
+    display:
+        flex;
+
+    gap:
+        2rem;
+
+    margin-top:
+        2.5rem;
+
+}
+
+
+.contact-info div {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        0.8rem;
+
+    color:
+        var(--light-gray);
+
+    font-size:
+        1.2rem;
+
+}
+
+
+.contact-info i {
+
+    color:
+        var(--red);
+
+}
+
+/* Contact form */
+
+.contact-form {
+
+    padding:
+        2rem;
+
+    border:
+        1px solid
+        var(--border);
+
+    border-radius:
+        20px;
+
+    background:
+        rgba(255,255,255,0.025);
+
+    display:
+        grid;
+
+    gap:
+        1rem;
+
+}
+
+
+.contact-form input,
+.contact-form textarea {
+
+    width:
+        100%;
+
+    padding:
+        1.3rem;
+
+    color:
+        white;
+
+    background:
+        #0c0c0f;
+
+    border:
+        1px solid
+        rgba(255,255,255,0.1);
+
+    border-radius:
+        12px;
+
+    font-size:
+        1.2rem;
+
+    transition:
+        var(--transition);
+
+}
+
+.contact-form textarea {
+
+    min-height:
+        140px;
+
+    resize:
+        vertical;
+
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+
+    border-color:
+        var(--red);
+
+    box-shadow:
+        0 0 0 3px
+        rgba(255,23,79,0.08);
+
+}
+
+.contact-form button {
+
+    border:
+        none;
+
+}
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer{
+    max-width: 1250px;
+    margin: auto;
+    padding: 3rem 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.footer-brand p {
+
+    color:
+        var(--gray);
+
+    font-size:
+        1.05rem;
+
+    margin-top:
+        0.4rem;
+
+}
+
+.footer-socials {
+
+    display:
+        flex;
+
+    gap:
+        0.8rem;
+
+}
+
+
+.footer-socials a {
+
+    width:
+        3.7rem;
+
+    height:
+        3.7rem;
+
+    display:
+        flex;
+
+    justify-content:
+        center;
+
+    align-items:
+        center;
+
+    border:
+        1px solid
+        rgba(255,255,255,0.12);
+
+    border-radius:
+        50%;
+
+    color:
+        white;
+
+    transition:
+        var(--transition);
+
+}
+
+
+.footer-socials a:hover {
+
+    background:
+        var(--red);
+
+    border-color:
+        var(--red);
+
+    transform:
+        translateY(-3px);
+
+}
+
+
+.copyright {
+
+    color:
+        var(--gray);
+
+    font-size:
+        1rem;
+
+}
+
+/* =====================================================
+   ANIMATION
+===================================================== */
+
+@keyframes fadeup{
+    from{
+        opacity: 0;
+        transform: translateY(25px);
+
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media(max-width:1050px){
+    nav{
+        gap:1.5rem;
+    }
+    nav a{
+        font-size: 1.15rem;
+    }
+    .home{
+        gap:4rem;
+
+    }
+    .home-img{
+        width: 42vw;
+    }
+    .skill-container{
+        grid-template-columns: repeat(2,1fr);
+
+    }
+}
+
+/* =====================================================
+   MOBILE NAV
+===================================================== */
+
+@media(max-width:850px){
+    header{
+        width: calc(100%-30px);
+    }
+    .nav-resume{
+        display: none;
+    }
+
+    .menu-icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 4rem;
+        height: 4rem;
+        border: 1px solid rgba(255,255,255,0.15);
+        border-radius: 50%;
+        font-size: 1.7rem;
+        cursor: pointer;
+    }
+    nav{
+        position: absolute;
+        top:calc(100% + 10px);
+        right: 0;
+        width: 220px;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding: 1rem;
+        background: rgba(8,8,10,0.96);
+        border: 1px solid rgba(255,255,255,0.1);
+        border-radius: 16px;
+        backdrop-filter: blur(20px);
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(-10px);
+        transition: var(--transition);
+    }
+    nav a{
+        padding: 1.2rem;
+        font-size: 1.3rem;
+    }
+    nav a::after{
+        display: none;
+    }
+}
+
